@@ -414,7 +414,7 @@ Okay, I will generate test cases in tabular format for a LinkedIn-like applicati
 **Topic: User Profile Creation**
 
 **Description:** This section focuses on testing the functionality related to creating and editing user profiles within the application.
- 
+
 | ID | SPECIFICATION | OBJECTIVE | INPUT DATA | EXPECTED OUTPUT | ACTUAL OUTPUT | STATUS |
 |---|---|---|---|---|---|---|
 | 1 | Required Fields | Verify that the user cannot create a profile without filling in all required fields. | Attempt to create a profile with only First Name filled ("John"), leaving Last Name, Headline, and Location blank. | Error message displayed indicating missing required fields (Last Name, Headline, Location). Profile creation blocked. |  |  |
@@ -436,7 +436,7 @@ I will be ready to generate more test cases based on the area of focus that you 
 ---
 
 Okay, I'm ready to generate test cases for the YouTube application's homepage.
-  
+
 | ID | SPECIFICATION | OBJECTIVE | INPUT DATA | EXPECTED OUTPUT | ACTUAL OUTPUT | STATUS |
 |---|---|---|---|---|---|---|
 | 1 | Verify page title | Ensure the page title accurately reflects the YouTube homepage. | Access the YouTube homepage. | Page title should be "YouTube". |  |  |
@@ -601,4 +601,3 @@ Okay, I will generate test cases in a tabular format for the "add todo, update, 
 
 
 ---
-

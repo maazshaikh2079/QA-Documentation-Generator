@@ -126,7 +126,7 @@ async function run2(userInput) {
     output = output.replace(/```/g, '');
 
     // Save output to file
-    const filename = "output/dr-op.md";
+    const filename = "./src/output/dr-op.md";
     fs.appendFile(filename, output + "\n\n---\n\n", (err) => {
       if (err) console.error("Error writing to file:", err);
       else console.log(`Defect Report appended to ${filename}`);

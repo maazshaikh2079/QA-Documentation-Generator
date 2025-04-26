@@ -60,9 +60,9 @@ async function run() {
 
   // let userInput = `Home page of Online learning and teaching marketplace (web application) like Udemy`;
   // let userInput = `Home page of a social media application like Snapchat`;
- 
-  
-  
+
+
+
   const result = await chatSession.sendMessage(userInput);
 
   // const result = await chatSession.sendMessage("INSERT_INPUT_HERE");
@@ -110,9 +110,9 @@ async function run(userInput) {
 
     let output = result.response.text();
     output = output.replace(/```/g, '');
-    
+
     // Save output to file
-    const filename = "output/tc-op.md";
+    const filename = "./src/output/tc-op.md";
     fs.appendFile(filename, output + "\n\n---\n\n", (err) => {
       if (err) console.error("Error writing to file:", err);
       else console.log(`Test cases appended to ${filename}`);
