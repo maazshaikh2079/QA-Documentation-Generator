@@ -40,7 +40,7 @@ const TestCaseGen = () => {
       {/* Input Form */}
       <form className="w-full max-w-3xl mt-6" onSubmit={async (e) => {
     e.preventDefault();
-    const response = await fetch("http://localhost:3000/generate-test-plan", {
+    const response = await fetch("https://qa-docs-gen.onrender.com/generate-test-plan", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ userInput: inputText }),
@@ -79,7 +79,7 @@ const TestCaseGen = () => {
       {/* Render Markdown Output */}
       {/* <div className="w-full bg-gray-50 rounded-lg p-4 border border-gray-300 text-left">
         <div className="whitespace-pre-wrap break-words prose max-w-none text-gray-800 overflow-x-auto w-full text-justify">
-          <ReactMarkdown remarkPlugins={[remarkGfm]}   
+          <ReactMarkdown remarkPlugins={[remarkGfm]}
      >
             {markdownData}
           </ReactMarkdown>

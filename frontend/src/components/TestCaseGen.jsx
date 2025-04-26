@@ -40,7 +40,7 @@ const TestCaseGen = () => {
       {/* Input Form */}
       <form className="w-full max-w-3xl mt-6" onSubmit={async (e) => {
     e.preventDefault();
-    const response = await fetch("http://localhost:3000/generate-test-cases", {
+    const response = await fetch("https://qa-docs-gen.onrender.com/generate-test-cases", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ userInput: inputText }),
